@@ -137,7 +137,7 @@ publishing {
 
                 pom {
                     name.set("PreProcessor")
-                    description.set("Comment PreProcessor for Java.")
+                    description.set("Comment pre-processor for Java development.")
                     url.set("https://github.com/WiIIiam278/PreProcessor")
 
                     licenses {
