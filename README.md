@@ -1,10 +1,4 @@
-![Maven metadata URL](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.tocraft.dev%2Fpublic%2Fdev%2Ftocraft%2Fpreprocessor%2Fmaven-metadata.xml&style=flat-square)
-
-# PreProcessor
-
-This Gradle-Plugin is based on [RePlayMod's PreProcessor](https://github.com/ReplayMod/preprocessor).
-
-It automatically preprocesses Kotlin, Java and Text Resources.
+A Gradle plugin for preprocessing code. Based on [ToCraft's PreProcessor](https://github.com/ToCraft/PreProcessor) which is based on [RePlayMod's PreProcessor](https://github.com/ReplayMod/preprocessor).
 
 ## Build File
 
@@ -13,7 +7,7 @@ Here's how you can apply the plugin in a `build.gradle` file:
 ~~~groovy
 plugins {
     id('java')
-    id('dev.tocraft.preprocessor') version '0.91-SNAPSHOT'
+    id('net.william278.preprocessor') version '0.91-SNAPSHOT'
 }
 ~~~
 
@@ -22,7 +16,7 @@ The Kotlin implementation for a `build.gradle.kts` file looks similar:
 ~~~kotlin
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.0.0"
-    id("dev.tocraft.preprocessor") version "0.91-SNAPSHOT"
+    id("net.william278.preprocessor") version "0.91-SNAPSHOT"
 }
 ~~~
 

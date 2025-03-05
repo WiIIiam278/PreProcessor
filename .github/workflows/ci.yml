@@ -1,0 +1,29 @@
+name: Release Tests & Publish
+
+on:
+  push:
+    branches: [ 'master' ]
+    paths-ignore:
+      - 'workflows/**'
+      - 'README.md'
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout for CI 🛎️'
+        uses: actions/checkout@v4
+      - name: 'Set up JDK 21 📦'
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Upload to Maven
+        run: ./gradlew check publish
+        env:
+          SNAPSHOTS_MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          SNAPSHOTS_MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
