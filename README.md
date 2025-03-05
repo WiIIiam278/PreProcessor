@@ -1,3 +1,15 @@
+<!--suppress ALL-->
+<p align="center">
+    <h1>PreProcessor</h1>
+    <a href="https://repo.william278.net/#/releases/net/william278/preprocessor/">
+        <img src="https://repo.william278.net/api/badge/latest/releases/net/william278/preprocessor?color=00fb9a&name=Maven&prefix=v" />
+    </a> 
+    <a href="https://discord.gg/tVYhJfyDWG">
+        <img src="https://img.shields.io/discord/818135932103557162.svg?label=&logo=discord&logoColor=fff&color=7389D8&labelColor=6A7EC2" />
+    </a> 
+</p>
+<br/>
+
 A Gradle plugin for preprocessing code. Based on [ToCraft's PreProcessor](https://github.com/ToCraft/PreProcessor) which is based on [RePlayMod's PreProcessor](https://github.com/ReplayMod/preprocessor).
 
 ## Build File
