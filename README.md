@@ -18,8 +18,8 @@ Here's how you can apply the plugin in a `build.gradle` file:
 
 ~~~groovy
 plugins {
-    id('java')
-    id('net.william278.preprocessor') version '0.91-SNAPSHOT'
+    id 'java'
+    id 'net.william278.preprocessor' version '1.0'
 }
 ~~~
 
@@ -28,7 +28,7 @@ The Kotlin implementation for a `build.gradle.kts` file looks similar:
 ~~~kotlin
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.0.0"
-    id("net.william278.preprocessor") version "0.91-SNAPSHOT"
+    id("net.william278.preprocessor") version "1.0"
 }
 ~~~
 
